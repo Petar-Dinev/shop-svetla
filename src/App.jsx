@@ -6,9 +6,21 @@ import Home from "./components/Home";
 import Contacts from "./components/Contacts";
 
 function App() {
-
   return (
     <>
+      <div>
+        <video
+          class="video"
+          src="./assets/Dara Ekimova - Дишам (Official Video).mp4"
+          controls
+        >
+          <track
+            kind="captions"
+            label="En"
+            src="./Anaconda.1997.BDRip.BG.Audio-Atany-bul.srt"
+          />
+        </video>
+      </div>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -18,9 +30,9 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <Link to='/shop-svetla/'>Home</Link>
+      <Link to="/shop-svetla/">Home</Link>
       {" | "}
-      <Link to='/shop-svetla/contacts'>Contacts</Link>
+      <Link to="/shop-svetla/contacts">Contacts</Link>
       <Routes>
         <Route path="/shop-svetla/" element={<Home />} />
         <Route path="/shop-svetla/contacts" element={<Contacts />} />
