@@ -10,8 +10,9 @@ function App() {
     <>
       <div>
         <video
-          class="video"
-          src="./assets/Dara Ekimova - Дишам (Official Video).mp4"
+          style={{ width: "500px", aspectRatio: "16/9" }}
+          className="video"
+          src="Dara Ekimova - Дишам (Official Video).mp4"
           controls
         >
           <track
